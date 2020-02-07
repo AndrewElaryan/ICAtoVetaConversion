@@ -27,13 +27,13 @@ output:
 
 # Formatting Data
 
-This will be the most effort intensive step on the user&#39;s end.
+This will be the most effort intensive step on the user's end.
 
-1. Navigate to the folder where the code resides and enter the &quot;Data&quot; tab.
+1. Navigate to the folder where the code resides and enter the "Data" tab.
 2. Copy and paste the ICA project data into this folder
-3. In each subfolder, named after the workday, create two new subfolders: &quot;GPS&quot; and &quot;VIB&quot;
-  a. Place all GPS **text** files in the &quot;GPS&quot; folder
-  b. Place all vibration **MATLAB** files in the &quot;VIB&quot; folder
+3. In each subfolder, named after the workday, create two new subfolders: "GPS" and "VIB"
+  a. Place all GPS **text** files in the "GPS" folder
+  b. Place all vibration **MATLAB** files in the "VIB" folder
 
 An example folder structure may look like:
 
@@ -87,9 +87,9 @@ An example folder structure may look like:
 
 4. Repeat the following for each workday in a project
   a. Select the folder of the requisite workday
-  b. Hold &quot;Shift&quot; and right click on the folder representing the workday
-  c. Select &quot;Open PowerShell window here&quot or "Open Command Prompt Here";
-  d. Copy and paste the following into the window and press &quot;Enter&quot;:
+  b. Hold "Shift" and right click on the folder representing the workday
+  c. Select "Open PowerShell window here" or "Open Command Prompt Here";
+  d. Copy and paste the following into the window and press "Enter":
 
     `cd GPS & dir /s/b *.txt & zzlistgps.txt & cd .. & cd VIB & dir /s/b *.mat & zzlistvib.txt`
 
@@ -101,10 +101,10 @@ We will concatenate all the data files for each day into two files: one for the 
 
 ## Concatenating GPS Files
 
-1. In the GPS folder, click on the file &quot;zzlistgps.txt&quot;
-2. Press &quot;Home&quot; on the top navigation bar and click &quot;Copy path&quot;
-3. Go to the code folder, hold &quot;Shift&quot; and right click
-4. Select &quot;Open PowerShell window here&quot or "Open Command Prompt Here";
+1. In the GPS folder, click on the file "zzlistgps.txt"
+2. Press "Home" on the top navigation bar and click "Copy path"
+3. Go to the code folder, hold "Shift" and right click
+4. Select "Open PowerShell window here" or "Open Command Prompt Here";
 5. Run the following:
 
     `python concatenateGPSFiles.py`
@@ -115,10 +115,10 @@ We will concatenate all the data files for each day into two files: one for the 
 
 ## Concatenating vibration Files
 
-1. In the VIB folder, click on the file &quot;zzlistvib.txt&quot;
-2. Press &quot;Home&quot; on the top navigation bar and click &quot;Copy path&quot;
-3. Go to the code folder, hold &quot;Shift&quot; and right click
-4. Select &quot;Open PowerShell window here&quot or "Open Command Prompt Here";
+1. In the VIB folder, click on the file "zzlistvib.txt";
+2. Press "Home" on the top navigation bar and click "Copy path";
+3. Go to the code folder, hold "Shift"; and right click
+4. Select "Open PowerShell window here" or "Open Command Prompt Here";
 5. Run the following:
 
     `python concatenateMatlabData.py`
@@ -132,10 +132,10 @@ We will concatenate all the data files for each day into two files: one for the 
 
     `python createFile.py`
 
-1. The final output will be held in &quot;converted\_output.csv&quot;
+1. The final output will be held in "converted_output.csv"
 
 ## Importing into Veta
 
-If this is the first file in a project, then simply open the &quot;converted\_output.csv&quot; with Veta.
+If this is the first file in a project, then simply open the "converted_output.csv" with Veta.
 
-If this is not the first file, then click on add new data file and us &quot;converted\_output.csv&quot; as the new file.
+If this is not the first file, then click on add new data file and us "converted_output.csv" as the new file.
