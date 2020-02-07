@@ -88,12 +88,12 @@ An example folder structure may look like:
 4. Repeat the following for each workday in a project
   a. Select the folder of the requisite workday
   b. Hold &quot;Shift&quot; and right click on the folder representing the workday
-  c. Select &quot;Open PowerShell window here&quot;
+  c. Select &quot;Open PowerShell window here&quot or "Open Command Prompt Here";
   d. Copy and paste the following into the window and press &quot;Enter&quot;:
 
     `cd GPS & dir /s/b *.txt & zzlistgps.txt & cd .. & cd VIB & dir /s/b *.mat & zzlistvib.txt`
 
-5. Exit the PowerShell window
+5. Exit the window
 
 # Conversion
 
@@ -104,7 +104,7 @@ We will concatenate all the data files for each day into two files: one for the 
 1. In the GPS folder, click on the file &quot;zzlistgps.txt&quot;
 2. Press &quot;Home&quot; on the top navigation bar and click &quot;Copy path&quot;
 3. Go to the code folder, hold &quot;Shift&quot; and right click
-4. Select &quot;Open PowerShell window here&quot;
+4. Select &quot;Open PowerShell window here&quot or "Open Command Prompt Here";
 5. Run the following:
 
     `python concatenateGPSFiles.py`
@@ -118,7 +118,7 @@ We will concatenate all the data files for each day into two files: one for the 
 1. In the VIB folder, click on the file &quot;zzlistvib.txt&quot;
 2. Press &quot;Home&quot; on the top navigation bar and click &quot;Copy path&quot;
 3. Go to the code folder, hold &quot;Shift&quot; and right click
-4. Select &quot;Open PowerShell window here&quot;
+4. Select &quot;Open PowerShell window here&quot or "Open Command Prompt Here";
 5. Run the following:
 
     `python concatenateMatlabData.py`
@@ -127,7 +127,7 @@ We will concatenate all the data files for each day into two files: one for the 
 
 ## Creating Final Output
 
-1. Open a PowerShell window in the &quot;Code&quot; directory
+1. Open a PowerShell window or a Command Prompt window in the &quot;Code&quot; directory
 2. Run the following:
 
     `python createFile.py`
