@@ -91,7 +91,7 @@ An example folder structure may look like:
   c. Select &quot;Open PowerShell window here&quot;
   d. Copy and paste the following into the window and press &quot;Enter&quot;:
 
-    `cd GPS \& dir /s/b \*.txt \& zzlistgps.txt \& cd .. \& cd VIB \& dir /s/b \*.mat \& zzlistvib.txt`
+    `cd GPS & dir /s/b *.txt & zzlistgps.txt & cd .. & cd VIB & dir /s/b *.mat & zzlistvib.txt`
 
 5. Exit the PowerShell window
 
@@ -107,7 +107,7 @@ We will concatenate all the data files for each day into two files: one for the 
 4. Select &quot;Open PowerShell window here&quot;
 5. Run the following:
 
-`python concatenateGPSFiles.py`
+    `python concatenateGPSFiles.py`
 
 6. When prompted, paste the path into the console and press enter
 
