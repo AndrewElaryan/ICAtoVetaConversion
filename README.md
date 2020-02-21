@@ -91,9 +91,10 @@ An example folder structure may look like:
   c. Select "Open PowerShell window here" or "Open Command Prompt Here";
   d. Copy and paste the following into the window and press "Enter":
     
-    i. For Powershell
+    - For Powershell
     `cd GPS;cmd /r dir /s/b *.txt>zzlistgps.txt;cd ..;cd VIB;cmd /r dir /s/b *.mat>zzlistvib.txt`
-    ii. For CMD
+    
+    - For CMD
     `cd GPS;dir /s/b *.txt>zzlistgps.txt;cd ..;cd VIB;dir /s/b *.mat>zzlistvib.txt`
 
 5. Exit the window
