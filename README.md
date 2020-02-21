@@ -90,8 +90,11 @@ An example folder structure may look like:
   b. Hold "Shift" and right click on the folder representing the workday
   c. Select "Open PowerShell window here" or "Open Command Prompt Here";
   d. Copy and paste the following into the window and press "Enter":
-
-    `cd GPS & dir /s/b *.txt & zzlistgps.txt & cd .. & cd VIB & dir /s/b *.mat & zzlistvib.txt`
+    
+    i. For Powershell
+    `cd GPS;cmd /r dir /s/b *.txt>zzlistgps.txt;cd ..;cd VIB;cmd /r dir /s/b *.mat>zzlistvib.txt`
+    ii. For CMD
+    `cd GPS;dir /s/b *.txt>zzlistgps.txt;cd ..;cd VIB;dir /s/b *.mat>zzlistvib.txt`
 
 5. Exit the window
 
