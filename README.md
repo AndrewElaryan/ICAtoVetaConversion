@@ -99,6 +99,13 @@ An example folder structure may look like:
 
 5. Exit the window
 
+## Requirements
+
+In a PowerShell window or CMD prompt, in the main folder, run:
+`python -m pip install -r requirement.txt`
+
+This should download all necessary requirements for conversion.
+
 # Conversion
 
 We will concatenate all the data files for each day into two files: one for the GPS data and one for the vibration data
