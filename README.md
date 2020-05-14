@@ -1,3 +1,4 @@
+<!---
 ---
 title: "README.md"
 author: "Andrew Elaryan"
@@ -6,6 +7,7 @@ output:
   rmarkdown::html_vignette:
     toc: true
 ---
+-->
 
 **Conversion of Intelligent Compaction Analyzer (ICA) Data to a Veta Compatible Format**
 
